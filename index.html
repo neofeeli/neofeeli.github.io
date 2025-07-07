@@ -3,6 +3,9 @@ layout: home-page
 ---
 {% include calculate_relative_base.html %}
 
+<script>
+  location.href = "/archive.html";
+</script>
 <ol class="post-card-box clearfix">
   {% for post in paginator.posts %}
   {% include remove_double_slash.html %}
