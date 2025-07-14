@@ -1,10 +1,11 @@
 # Site settings
 title: 챗GPT를 활용한 자바 스프링 및 데이터 분석 시스템 기반 웹 플랫폼 구축 과정
-description: '안양대 수업.' # this means to ignore newlines until "baseurl:"
-permalink: ':title:output_ext'
+description: "안양대 수업." # this means to ignore newlines until "baseurl:"
+permalink: ":title:output_ext"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://neofeeli.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "/assets/img/branding/MVM-logo-full.svg"
+# logo: "/assets/img/branding/MVM-logo-full.svg"
+logo: "/assets/img/logo.png"
 logo-icon: "/assets/img/branding/MVM-symbol.svg"
 logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG file
 
@@ -39,22 +40,22 @@ bandcamp: # Add your Bandcamp username
 stackoverflow: # Add your stackoverflow account
 
 # Newsletter
-mailchimp: 
+mailchimp:
 
 # Tracker
-analytics: 
-fbadmin: 
+analytics:
+fbadmin:
 
 # Paginate
 paginate: 6
-paginate_path: 'page:num'
+paginate_path: "page:num"
 words_per_minute: 200
 
 extensions:
   mermaid_enable: true
 
 # Comments
-comments: utteranc  #[disqus, utteranc]
+comments: utteranc #[disqus, utteranc]
 comments_opts:
   comments_curtain: yes # leave empty to show the disqus embed directly
   repo: # The GitHub repo URL.  https://utteranc.es/
@@ -89,4 +90,12 @@ plugins:
   - jekyll-sitemap
 
 include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/"]
+exclude:
+  [
+    "node_modules",
+    "gulpfile.js",
+    "package.json",
+    "yarn.lock",
+    "package-lock.json",
+    "assets/css/sass/",
+  ]
